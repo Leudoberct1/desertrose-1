@@ -10,7 +10,6 @@
 	siemens_coefficient = 1
 	var/spamcheck = 0
 	var/list/voicespan = list(SPAN_COMMAND)
-	var/megaphone_sound = 'sound/items/megaphone.ogg'
 
 /obj/item/megaphone/suicide_act(mob/living/carbon/user)
 	user.visible_message("<span class='suicide'>[user] is uttering [user.p_their()] last words into \the [src]! It looks like [user.p_theyre()] trying to commit suicide!</span>")
@@ -34,7 +33,7 @@
 		if(spamcheck > world.time)
 			to_chat(user, "<span class='warning'>\The [src] needs to recharge!</span>")
 		else
-			playsound(loc, megaphone_sound, 100, 0, 1)
+			playsound(loc, 'sound/items/megaphone.ogg', 100, 0, 1)
 			spamcheck = world.time + 50
 			speech_args[SPEECH_SPANS] |= voicespan
 
@@ -73,4 +72,11 @@
 	item_state = "cornu"
 	lefthand_file = 'icons/mob/inhands/equipment/horns_lefthand.dmi'
 	righthand_file = 'icons/mob/inhands/equipment/horns_righthand.dmi'
-	megaphone_sound = 'sound/items/cornu.ogg'
+
+/obj/item/megaphone/cornu/get_held_item_speechspans(mob/living/carbon/user)
+	if(spamcheck > world.time)
+		to_chat(user, "<span class='warning'>\The [src] is not to be overused in battle!</span>")
+	else
+		playsound(loc, 'sound/items/cornu.ogg', 100, 0, 1)
+		spamcheck = world.time + 50
+		return voicespan

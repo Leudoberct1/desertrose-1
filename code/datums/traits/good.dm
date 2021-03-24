@@ -86,7 +86,6 @@
 	lose_text = "<span class='danger'>You start tromping around like a barbarian.</span>"
 	medical_record_text = "Patient's dexterity belies a strong capacity for stealth."
 
-/*
 /datum/quirk/quick_step
 	name = "Quick Step"
 	desc = "You walk with determined strides, and out-pace most people when walking."
@@ -95,7 +94,6 @@
 	gain_text = "<span class='notice'>You feel determined. No time to lose.</span>"
 	lose_text = "<span class='danger'>You feel less determined. What's the rush, man?</span>"
 	medical_record_text = "Patient scored highly on racewalking tests."
-*/
 
 /datum/quirk/musician
 	name = "Musician"
@@ -180,14 +178,12 @@
 	lose_text = "<span class='danger'>You no longer feel HONGRY.</span>"
 	medical_record_text = "Patient demonstrates a disturbing capacity for eating."
 
-/* go fuck yourself idiots -superballs
 /datum/quirk/trandening
 	name = "High Luminosity Eyes"
 	desc = "When the next big fancy implant came out you had to buy one on impluse!"
 	value = 1
 	gain_text = "<span class='notice'>You have to keep up with the next big thing!.</span>"
 	lose_text = "<span class='danger'>High-tech gizmos are a scam...</span>"
-*/
 
 /datum/quirk/trandening/on_spawn()
 	var/mob/living/carbon/human/H = quirk_holder

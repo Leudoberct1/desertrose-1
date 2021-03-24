@@ -137,7 +137,6 @@ Centurion
 	jobtype = /datum/job/CaesarsLegion/Legionnaire/f13centurion
 	id =			/obj/item/card/id/dogtag/legcenturion
 	mask =			/obj/item/clothing/mask/bandana/legcenturion
-	neck =			/obj/item/storage/belt/holster
 	glasses = 		/obj/item/clothing/glasses/legionpolarizing
 	ears = 			/obj/item/radio/headset/headset_legion
 	r_pocket =      /obj/item/restraints/handcuffs
@@ -168,7 +167,7 @@ Centurion
 	head = 			/obj/item/clothing/head/helmet/f13/legion/rangercent
 	suit_store = /obj/item/gun/ballistic/shotgun/antimateriel
 	backpack_contents = list(
-		/obj/item/ammo_box/a50MG=2,
+		/obj/item/ammo_box/a50MG=2,	
 		/obj/item/gun/ballistic/automatic/pistol/deagle=1,
 		/obj/item/ammo_box/magazine/m44=1
 	)
@@ -199,13 +198,12 @@ Orator
 
 /datum/outfit/job/CaesarsLegion/Legionnaire/f13orator
 	name = "Legion Orator"
-	suit = 	     /obj/item/clothing/suit/armor/f13/legion/vet/orator
-	ears =	     /obj/item/radio/headset/headset_legion
-	neck =	     /obj/item/storage/belt/holster
-	id =         /obj/item/card/id/dogtag/legorator
-	belt =       /obj/item/claymore/machete/spatha
+	suit = 	/obj/item/clothing/suit/armor/f13/legion/vet/orator
+	ears =	/obj/item/radio/headset/headset_legion
+	id = /obj/item/card/id/dogtag/legorator
+	belt = /obj/item/claymore/machete/spatha
 	suit_store = /obj/item/gun/ballistic/automatic/pistol/type17
-	l_pocket = 	 /obj/item/flashlight/lantern
+	l_pocket = 		/obj/item/flashlight/lantern
 	backpack_contents = list(
 		/obj/item/reagent_containers/pill/patch/healpoultice=1,
 		/obj/item/ammo_box/magazine/m9mm=3,
@@ -368,7 +366,6 @@ Decanii
 	suit = 			/obj/item/clothing/suit/armor/f13/legion/heavy
 	head = 			/obj/item/clothing/head/helmet/f13/legion/heavy
 	mask =			/obj/item/clothing/mask/bandana/legdecan
-	neck =			/obj/item/storage/belt/holster
 	glasses = 		/obj/item/clothing/glasses/sunglasses/big
 	ears = 			/obj/item/radio/headset/headset_legion
 	suit_store = 	/obj/item/gun/ballistic/automatic/service/r82
@@ -413,7 +410,6 @@ Decanii
 	suit =			/obj/item/clothing/suit/armor/f13/legion/vet
 	head =			/obj/item/clothing/head/helmet/f13/legion/prime/decan
 	mask =			/obj/item/clothing/mask/bandana/legdecan
-	neck =			/obj/item/storage/belt/holster
 	glasses = 		/obj/item/clothing/glasses/sunglasses
 	ears = 			/obj/item/radio/headset/headset_legion
 	suit_store =	/obj/item/gun/ballistic/automatic/m1garand
@@ -458,7 +454,6 @@ Decanii
 	suit = 			/obj/item/clothing/suit/armor/f13/legion/vet
 	head = 			/obj/item/clothing/head/helmet/f13/legion/recruit/decan
 	mask =			/obj/item/clothing/mask/bandana/legdecan
-	neck =			/obj/item/storage/belt/holster
 	glasses = 		/obj/item/clothing/glasses/legiongoggles
 	ears = 			/obj/item/radio/headset/headset_legion
 	suit_store = 	/obj/item/gun/ballistic/automatic/mini_uzi
@@ -509,7 +504,6 @@ Vexillarius
 	jobtype = /datum/job/CaesarsLegion/Legionnaire/f13vexillarius
 	id = 			/obj/item/card/id/dogtag/legveteran
 	mask =			/obj/item/clothing/mask/bandana/legvet
-	neck =			/obj/item/storage/belt/holster
 	suit = 			/obj/item/clothing/suit/armor/f13/legion/vet/vexil
 	glasses = 		/obj/item/clothing/glasses/sunglasses
 	ears = 			/obj/item/radio/headset/headset_legion
@@ -616,7 +610,6 @@ Veteran Legionary
 	id = 			/obj/item/card/id/dogtag/legveteran
 	mask =			/obj/item/clothing/mask/bandana/legvet
 	head = 			/obj/item/clothing/head/helmet/f13/legion/vet
-	neck = 			/obj/item/storage/belt/holster
 	suit = 			/obj/item/clothing/suit/armor/f13/legion/vet
 	glasses = 		/obj/item/clothing/glasses/sunglasses
 	ears	=		/obj/item/radio/headset/headset_legion
@@ -681,7 +674,6 @@ Prime Legionairy
 	id = 			/obj/item/card/id/dogtag/legprime
 	mask =			/obj/item/clothing/mask/bandana/legprime
 	head = 			/obj/item/clothing/head/helmet/f13/legion/prime
-	neck = 			/obj/item/storage/belt/holster
 	suit = 			/obj/item/clothing/suit/armor/f13/legion/prime
 	glasses = 		/obj/item/clothing/glasses/legiongoggles
 	ears	=		/obj/item/radio/headset/headset_legion
@@ -717,7 +709,7 @@ Prime Legionairy
 
 /datum/outfit/loadout/legrange
 	name = "Ranged Legionary"
-	suit_store = /obj/item/gun/ballistic/shotgun/automatic/hunting/trail
+	suit_store = /obj/item/gun/ballistic/shotgun/automatic/hunting/trail/scoped
 	backpack_contents = list(
 		/obj/item/ammo_box/tube/m44=2,
 		/obj/item/ammo_box/m44box=1,
@@ -781,7 +773,7 @@ Venator
 
 	loadout_options = list(
 	/datum/outfit/loadout/vensniper, //.308 sniper and gladius
-	/datum/outfit/loadout/venassault //Neostead Shotgun + Gladius
+	/datum/outfit/loadout/venassault //Bulldog assault shotgun and C4
 	)
 
 /datum/outfit/job/CaesarsLegion/Legionnaire/f13venator/post_equip(mob/living/carbon/human/H, visualsOnly = FALSE)
@@ -799,7 +791,6 @@ Venator
 	suit 		= 	/obj/item/clothing/suit/armor/f13/legion/venator
 	head 		= 	/obj/item/clothing/head/helmet/f13/legion/venator
 	mask 		=	/obj/item/clothing/mask/bandana/legdecan
-	neck 		=	/obj/item/storage/belt/holster
 	glasses 	=	/obj/item/clothing/glasses/night
 	ears		=	/obj/item/radio/headset/headset_legion
 	r_pocket 	= 	/obj/item/binoculars
@@ -817,9 +808,9 @@ Venator
 
 /datum/outfit/loadout/venassault
 	name = "Venator Assault"
-	suit_store	=	/obj/item/gun/ballistic/shotgun/neostead
+	suit_store	=	/obj/item/gun/ballistic/automatic/shotgun/bulldog
 	backpack_contents = list(
-	    /obj/item/storage/fancy/ammobox/lethalshot=2,
+		/obj/item/ammo_box/magazine/m12g=2,
 		/obj/item/claymore/machete/gladius=1)
 
 /*
@@ -857,7 +848,6 @@ Explorer
 	id = 		/obj/item/card/id/dogtag/legprime
 	suit = 		/obj/item/clothing/suit/armor/f13/legion/vet/explorer
 	head = 		/obj/item/clothing/head/helmet/f13/legion/vet/explorer
-	neck = 		/obj/item/storage/belt/holster
 	glasses = 	/obj/item/clothing/glasses/legiongoggles
 	ears	=	/obj/item/radio/headset/headset_legion
 	r_pocket = /obj/item/binoculars
@@ -871,18 +861,18 @@ Explorer
 
 /datum/outfit/loadout/explinfil
 	name = "Infiltrator Explorer"
-	suit_store = /obj/item/gun/ballistic/revolver/revolver45
+	suit_store = /obj/item/gun/ballistic/revolver/m29
 	backpack_contents = list(
-		/obj/item/ammo_box/c45rev=2,
+		/obj/item/ammo_box/m44=2,
 		/obj/item/grenade/plastic=1,
 		/obj/item/storage/belt/utility/full/engi=1,
 		/obj/item/clothing/glasses/welding=1)
 
 /datum/outfit/loadout/explscout
 	name = "Scout Explorer"
-	suit_store = /obj/item/gun/ballistic/shotgun/kar98k
+	suit_store = /obj/item/gun/ballistic/shotgun/automatic/hunting/trail/scoped
 	backpack_contents = list(
-	    /obj/item/ammo_box/a762/doublestacked=2)
+		/obj/item/ammo_box/tube/m44=2)
 
 /*
 Auxilia
@@ -1096,5 +1086,5 @@ Slave
 	belt = /obj/item/hatchet
 	backpack_contents = list(
 		/obj/item/storage/bag/plants=1,
-		/obj/item/clothing/under/f13/legslavef=1,
+		/obj/item/clothing/under/f13/legslavef=1,		
 		/obj/item/radio=1)
