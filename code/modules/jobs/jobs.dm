@@ -46,13 +46,17 @@ GLOBAL_LIST_INIT(nonhuman_positions, list(
 GLOBAL_LIST_INIT(command_positions, list(
 	"Elder",
 	"Head Scribe",
-	"Head Paladin",
-	"Head Knight",
+	"Sentinel",
+	"Knight-Captain",
 
 	"Legion Centurion",
 	"Legion Orator",
 	"Legion Venator",
 	"Priestess of Mars",
+
+	"NCR Captain",
+	"NCR Lieutenant",
+	"NCR First Sergeant",
 
 	"Overseer",
 	"Chief of Security",
@@ -75,14 +79,14 @@ GLOBAL_LIST_INIT(silicon_whitelist_positions, list(
 GLOBAL_LIST_INIT(faction_whitelist_positions, list(
 "Head Scribe",
 "Elder",
-"Head Paladin",
-"Head Knight",
+"Sentinel",
+"Knight-Captain",
 "Head Scribe",
-"Star Paladin",
+"Senior Paladin",
 "Paladin",
-"Star Knight",
+"Senior Knight",
 "Knight",
-"Proctor",
+"Senior Scribe",
 "Scribe",
 "BoS Off-Duty",
 
@@ -100,6 +104,14 @@ GLOBAL_LIST_INIT(faction_whitelist_positions, list(
 "Legion Slavemaster",
 "Legion Explorer",
 "Auxilia",
+
+"NCR Captain",
+"NCR Lieutenant",
+"NCR First Sergeant",
+"NCR Sergeant",
+"NCR Corporal",
+"NCR Specialist",
+"NCR Trooper",
 
 "Mayor",
 "Sheriff",
@@ -126,11 +138,11 @@ GLOBAL_LIST_INIT(faction_whitelist_positions, list(
 ))
 
 GLOBAL_LIST_INIT(faction_player_positions, list(
-"Star Paladin",
+"Senior Paladin",
 "Paladin",
-"Star Knight",
+"Senior Knight",
 "Knight",
-"Proctor",
+"Senior Scribe",
 "Scribe",
 "BoS Off-Duty",
 
@@ -144,6 +156,10 @@ GLOBAL_LIST_INIT(faction_player_positions, list(
 "Legion Slavemaster",
 "Legion Explorer",
 "Auxilia",
+
+"NCR Sergeant",
+"NCR Corporal",
+"NCR Specialist",
 
 "Deputy",
 "Shopkeeper",
@@ -169,17 +185,17 @@ GLOBAL_LIST_INIT(antagonist_whitelist_positions, list(
 
 GLOBAL_LIST_INIT(brotherhood_command_positions, list(
 	"Elder",
-	"Head Paladin",
-	"Head Knight",
+	"Sentinel",
+	"Knight-Captain",
 	"Head Scribe"
 ))
 
 GLOBAL_LIST_INIT(brotherhood_positions, list(
-	"Star Paladin",
+	"Senior Paladin",
 	"Paladin",
-	"Star Knight",
+	"Senior Knight",
 	"Knight",
-	"Proctor",
+	"Senior Scribe",
 	"Scribe",
 	"Initiate",
 	"BoS Off-Duty"
@@ -224,44 +240,30 @@ GLOBAL_LIST_INIT(legion_positions, list(
 	"Legion Slave"
 ))
 
+GLOBAL_LIST_INIT(ncr_command_positions, list(
+	"NCR Captain",
+	"NCR Lieutenant",
+	"NCR First Sergeant",
+	"NCR Veteran Ranger"
+))
+
 GLOBAL_LIST_INIT(ncr_rangervet_positions, list(
-	"NCR Veteran Ranger",
+	"NCR Veteran Ranger"
 ))
 
 GLOBAL_LIST_INIT(ncr_ranger_positions, list(
-	"NCR Ranger",
-))
-
-GLOBAL_LIST_INIT(ncr_upper_command_positions, list(
-	"NCR Lieutenant",
-	"NCR Sergeant First Class",
-))
-
-GLOBAL_LIST_INIT(ncr_lower_command_positions, list(
-	"NCR Medical Officer",
-	"NCR Sergeant",
-	"NCR Corporal",
-))
-
-GLOBAL_LIST_INIT(ncr_general_positions, list(
-	"NCR Combat Medic",
-	"NCR Combat Engineer",
-	"NCR Trooper",
-	"NCR Off-Duty"
+	"NCR Ranger"
 ))
 
 GLOBAL_LIST_INIT(ncr_positions, list(
 	"NCR Lieutenant",
-	"NCR Medical Officer",
-	"NCR Sergeant First Class",
+	"NCR First Sergeant",
 	"NCR Sergeant",
 	"NCR Corporal",
-	"NCR Combat Medic",
-	"NCR Combat Engineer",
+	"NCR Specialist",
 	"NCR Trooper",
 	"NCR Rear Echelon",
 	"NCR Off-Duty",
-	"NCR Veteran Ranger",
 	"NCR Ranger"
 ))
 
@@ -336,7 +338,7 @@ GLOBAL_LIST_INIT(exp_jobsmap, list(
 
 	EXP_TYPE_TRIBALCOMMAND = list("titles" = list("Chief","Shaman","Head Hunter")),
 	EXP_TYPE_FOLLOWERSCOMMAND = list("titles" = list("Followers Administrator")),
-	EXP_TYPE_NCRCOMMAND    = list("titles" = list("NCR Lieutenant","NCR Sergeant First Class","NCR Captain", "NCR Veteran Ranger"))
+	EXP_TYPE_NCRCOMMAND    = list("titles" = list("NCR Lieutenant","NCR First Sergeant","NCR Captain", "NCR Veteran Ranger"))
 
 
 ))
