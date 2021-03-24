@@ -15587,7 +15587,7 @@
 	dir = 2;
 	dwidth = 1;
 	height = 4;
-	id = "bos_level_1";
+	id = "bos_level_3";
 	name = "Level 3: Archives; Recreation; Elders";
 	width = 5
 	},
@@ -19762,8 +19762,8 @@
 	dir = 2;
 	dwidth = 1;
 	height = 4;
-	id = "bos_level_3";
-	name = "Level 3: Engineering";
+	id = "bos_level_2";
+	name = "Level 2: Engineering";
 	width = 5
 	},
 /turf/open/floor/plasteel/elevatorshaft,
@@ -21445,8 +21445,8 @@
 	dir = 2;
 	dwidth = 1;
 	height = 4;
-	id = "bos_level_2";
-	name = "Level 2: Operations";
+	id = "bos_level_1";
+	name = "Level 1: Operations";
 	roundstart_template = /datum/map_template/shuttle/bos/elevator;
 	width = 5
 	},
