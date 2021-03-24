@@ -4812,7 +4812,6 @@
 /area/f13/tunnel)
 "eiN" = (
 /obj/structure/chair/stool/retro,
-/mob/living/simple_animal/hostile/ghoul/glowing,
 /obj/effect/decal/cleanable/dirt,
 /obj/effect/decal/cleanable/dirt,
 /turf/open/indestructible/ground/inside/dirt,
@@ -7187,7 +7186,6 @@
 "gov" = (
 /obj/structure/rack,
 /obj/effect/spawner/lootdrop/f13/weapon/gun/tier3,
-/obj/effect/spawner/lootdrop/f13/weapon/gun/tier3,
 /obj/item/gun/energy/laser/pistol,
 /obj/item/gun/energy/laser/pistol,
 /obj/item/gun/energy/laser/pistol,
@@ -8246,6 +8244,19 @@
 /obj/structure/reagent_dispensers/beerkeg,
 /turf/open/floor/f13/wood,
 /area/f13/sewer)
+"hir" = (
+/obj/effect/decal/cleanable/dirt,
+/obj/structure/cable{
+	icon_state = "4-8"
+	},
+/obj/structure/cable{
+	icon_state = "0-4"
+	},
+/obj/machinery/power/smes/engineering{
+	charge = 0
+	},
+/turf/open/floor/plasteel/f13/vault_floor/red/whiteredfull,
+/area/f13/brotherhood)
 "hiI" = (
 /obj/structure/decoration/vent{
 	layer = 2.8
@@ -9235,7 +9246,9 @@
 /obj/structure/cable{
 	icon_state = "0-4"
 	},
-/obj/machinery/power/smes/engineering,
+/obj/machinery/power/smes/engineering{
+	charge = 0
+	},
 /obj/machinery/light/small,
 /turf/open/floor/plasteel/f13/vault_floor/red/whiteredfull,
 /area/f13/brotherhood)
@@ -18040,13 +18053,14 @@
 /turf/open/floor/plasteel/f13/vault_floor/plating,
 /area/f13/brotherhood)
 "pGL" = (
-/mob/living/simple_animal/hostile/ghoul,
-/obj/effect/decal/cleanable/dirt,
-/turf/open/floor/f13{
-	dir = 10;
-	icon_state = "redmark";
-	tag = "icon-redmark (SOUTHWEST)"
+/obj/structure/lattice{
+	density = 1
 	},
+/obj/structure/disposalpipe/junction/flip{
+	dir = 8
+	},
+/obj/machinery/light/small,
+/turf/open/floor/plating/tunnel,
 /area/f13/brotherhood)
 "pHv" = (
 /obj/machinery/telecomms/server/presets/enclave,
@@ -18707,12 +18721,12 @@
 	},
 /area/f13/brotherhood)
 "qpn" = (
-/mob/living/simple_animal/hostile/ghoul/reaver,
-/turf/open/floor/f13{
-	dir = 10;
-	icon_state = "redmark";
-	tag = "icon-redmark (SOUTHWEST)"
+/obj/structure/table,
+/obj/item/flashlight/lamp{
+	pixel_x = -14;
+	pixel_y = 9
 	},
+/turf/open/floor/plasteel/f13/vault_floor/misc/vaultrust,
 /area/f13/brotherhood)
 "qpE" = (
 /obj/effect/decal/cleanable/dirt,
@@ -21822,7 +21836,9 @@
 /area/f13/tunnel)
 "sTB" = (
 /obj/effect/decal/cleanable/dirt,
-/obj/item/am_containment,
+/obj/item/am_containment{
+	pixel_x = 3
+	},
 /obj/structure/table/reinforced,
 /obj/structure/window/plasma/reinforced{
 	dir = 4
@@ -21834,6 +21850,22 @@
 /obj/machinery/door/window/brigdoor{
 	dir = 1
 	},
+/obj/item/am_containment,
+/obj/item/am_containment{
+	pixel_x = -3
+	},
+/obj/item/am_containment,
+/obj/item/am_containment,
+/obj/item/am_containment,
+/obj/item/am_containment,
+/obj/item/am_containment,
+/obj/item/am_containment,
+/obj/item/am_containment,
+/obj/item/am_containment,
+/obj/item/am_containment,
+/obj/item/am_containment,
+/obj/item/am_containment,
+/obj/item/am_containment,
 /turf/open/floor/plasteel/f13/vault_floor/yellow/corner,
 /area/f13/brotherhood)
 "sUl" = (
@@ -27057,14 +27089,6 @@
 /obj/item/melee/classic_baton/telescopic{
 	pixel_x = -4;
 	pixel_y = 8
-	},
-/obj/item/melee/classic_baton/telescopic{
-	pixel_x = -4;
-	pixel_y = 5
-	},
-/obj/item/melee/classic_baton/telescopic{
-	pixel_x = -4;
-	pixel_y = 2
 	},
 /obj/item/reagent_containers/spray/pepper{
 	pixel_x = -10;
@@ -78510,7 +78534,7 @@ vcu
 vcu
 vcu
 abN
-gaz
+pGL
 jZH
 jZH
 jZH
@@ -79281,7 +79305,7 @@ vcu
 vcu
 vcu
 abN
-gaz
+pGL
 jZH
 kkt
 wnM
@@ -80052,7 +80076,7 @@ vcu
 vcu
 vcu
 abN
-gaz
+pGL
 jZH
 kkt
 bHQ
@@ -80632,7 +80656,7 @@ uoO
 uoO
 jZH
 due
-vrC
+hir
 jzs
 qRv
 vrC
@@ -80892,7 +80916,7 @@ due
 wNs
 kYh
 bJg
-vrC
+hir
 jZH
 oCy
 ylo
@@ -88070,7 +88094,7 @@ jZH
 rFJ
 rFJ
 rFJ
-qWx
+qpn
 fsQ
 fDi
 awF
@@ -89101,7 +89125,7 @@ rFJ
 qWx
 qWx
 qWx
-qWx
+qpn
 rFJ
 rFJ
 iFz
@@ -90065,8 +90089,8 @@ jZH
 fbK
 vrm
 eNM
-pGL
-qpn
+pjI
+oZm
 jZH
 rOj
 jZH
